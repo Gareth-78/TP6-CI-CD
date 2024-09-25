@@ -7,7 +7,7 @@ else
    version="${1}"
 fi
 
-docker run -d --name node_app_test -p 8000:8000 -v "$PWD":/app localhost:5000/containersol/nodejs_app:${version}
+docker run -d --name node_app_test -p 8000:8000 -v "$PWD":/app localhost:5000/containersol/introci:${version}
 
 echo "Testing image: localhost:5000/containersol/nodejs_app:${version}"
 

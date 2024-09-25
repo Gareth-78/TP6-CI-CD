@@ -7,8 +7,8 @@ else
    version="${1}"
 fi
 
-cd nodejs_app
+cd introci
 
-docker build -t localhost:5000/containersol/nodejs_app:${version} . 
+docker build -t localhost:5000/containersol/introci:${version} . 
 
 cd ..
